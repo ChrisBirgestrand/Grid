@@ -1,11 +1,92 @@
-.grid-container {
+.grid__container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    grid-gap: 15px;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-gap: 24px;
+    width: 85%;
+    height: 80%;
     background-color: black;
+    padding: 24px;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+}
+
+div {
+    display: block;
+}
+
+.grid__element {
+    overflow: hidden;
+    position: relative;
 }
 
 .G1 {
     background-color: aqua;
+    grid-column: 1 / 4;
+    grid-row: 1 / 4;
+}
+
+.G2 {
+    background-color: blueviolet;
+    grid-column: 4 / 7;
+    grid-row: 1 / 7;
+}
+
+.G3 {
+    background-color: cornflowerblue;
+    grid-column: 7 / 9;
+    grid-row: 1 / 3;
+    
+}
+
+.G4 {
+    background-color: blue;
+    grid-column: 7 / 9;
+    grid-row: 3 / 5
+}
+
+.G5 {
+    background-color: cornsilk;
+    grid-column: 1 / 4;
+    grid-row: 4 / 7;
+}
+
+
+.G6 {
+    background-color: blanchedalmond;
+    grid-column: 7 / 9;
+    grid-row: 5 / 7;
+}
+
+.G7 {
+    background-color: brown;
+    grid-column: 1 / 4;
+    grid-row: 7 / 11;
+}
+
+.G8 {
+    background-color: aquamarine;
+    grid-column: 4 / 5;
+    grid-row: 7 / 9;
+}
+
+.G9 {
+    background-color: crimson;
+    grid-column: 4 / 5;
+    grid-row: 9 / 11;
+}
+
+.G10 {
+    background-color: darkgrey;
+    grid-column: 5 / 8;
+    grid-row: 7 / 11;
+}
+
+.G11 {
+    background-color: crimson;
+    grid-column: auto;
+    grid-row: 7 / 11;
 }
